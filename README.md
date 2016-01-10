@@ -3,7 +3,9 @@ Google / Github authentication proxy
 
 > Dockerized nodejs authentication proxy supporting google/github auth through the npm doorman-proxy package 
 
-This docker container runs the [doorman-proxy](https://github.com/movableink/doorman) nodejs package as a supervisord process
+This docker container runs the [doorman-proxy](https://github.com/bittrance/doorman) nodejs package as a supervisord process.
+This is a fork of https://github.com/movableink/doorman to add support for X-Remote-User header, see
+https://github.com/movableink/doorman/pull/43.
 
 ## Features
 

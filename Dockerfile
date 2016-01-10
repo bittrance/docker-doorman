@@ -13,7 +13,7 @@ RUN npm install npm -g
 #
 # Install supervisor
 #
-RUN apt-get update && apt-get upgrade -y && \
+RUN apt-get update && \
     apt-get -y install supervisor && \
     apt-get clean && apt-get autoremove -y
 
@@ -21,7 +21,7 @@ RUN apt-get update && apt-get upgrade -y && \
 # Clone doorman repo and initialize npm packages
 #
 RUN apt-get -y --no-install-recommends install git  && \
-    git clone --single-branch --branch master https://github.com/movableink/doorman.git && \
+    git clone --single-branch --branch master https://github.com/bittrance/doorman.git && \
     cd /doorman && \
     npm install
 
